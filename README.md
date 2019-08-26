@@ -11,6 +11,7 @@ from CurrysBot import currys_dong_scraper
 url='https://www.currys.co.uk/gbuk/audio-and-headphones/audio/hifi-systems-and-speakers/lg-pk5-xboom-go-portable-bluetooth-speaker-black-10180615-pdt.html'
 
 curry=currys_dong_scraper(url)
+
 curry.dong_scraper()
 
 Result you'll get Dataframe consisting of
