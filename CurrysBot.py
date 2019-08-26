@@ -114,7 +114,8 @@ class currys_dong_scraper:
             final.sort_values(by='int Date',ascending=False,inplace=True)
             
             os.chdir('D:/download')
-            writer=pd.ExcelWriter('Currys_65Q60.xlsx',engine='xlsxwriter')
+            writer=pd.ExcelWriter('Currys_%s.xlsx'%productName[:15],engine='xlsxwriter')
             final.to_excel(writer,sheet_name=productName[:15])
             
             writer.save()
+        return final 
